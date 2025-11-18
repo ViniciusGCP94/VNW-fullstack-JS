@@ -1,0 +1,194 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #fff;
+}
+
+body {
+  width: 100vw;
+}
+body header {
+  height: 100vh;
+  background-image: url("../images/bannerHeader.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+}
+body header nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-image: linear-gradient(90deg, #4247A2 0%, #52B095 100%);
+  width: 86%;
+  padding: 0px 15% 0px 3%;
+  margin: 60px auto;
+  border-radius: 30px;
+}
+body header nav img {
+  width: 25%;
+  padding: 5px;
+}
+body header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+body header nav ul li {
+  font-family: Roboto;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+body header nav ul li a {
+  text-decoration: none;
+}
+body header nav ul li a:hover {
+  text-decoration: underline;
+}
+body header .header-box {
+  width: 86%;
+  margin: 0 auto;
+}
+body header .header-box .text-header-box {
+  width: 50%;
+  margin-top: 70px;
+}
+body header .header-box .text-header-box h1 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: transparent;
+  background: linear-gradient(90deg, #1173D4 0%, #33CC73 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+body header .header-box .text-header-box p {
+  width: 70%;
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 100%;
+  color: #04031C;
+}
+body header .header-box .buttons-header-box {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-top: 50px;
+}
+body header .header-box .buttons-header-box a {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #1173D4;
+  border: 2px solid #1173D4;
+  border-radius: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  color: #FFFFFF;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+body header .header-box .buttons-header-box a:hover {
+  background-color: #F9FAFB;
+  color: #1173D4;
+  box-shadow: 10px 10px 15px rgb(17, 115, 212);
+}
+body header .header-box .buttons-header-box .about-more-button {
+  text-decoration: none;
+  padding: 10px 30px;
+  background-color: #F9FAFB;
+  border: 2px solid #1173D4;
+  border-radius: 10px;
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  color: #1173D4;
+  cursor: pointer;
+  outline: none;
+  transition: box-shadow 0.3s ease-in-out;
+}
+body header .header-box .buttons-header-box .about-more-button:hover {
+  box-shadow: 10px 10px 15px rgb(17, 115, 212);
+}
+body main {
+  width: 100vw;
+}
+body main section {
+  text-align: center;
+  padding: 50px 16% 60px 16%;
+}
+body main .exames-de-rotina {
+  width: 100%;
+  margin: 0 auto;
+  background-color: #F8F9FA;
+}
+body main .exames-de-rotina h2 {
+  font-family: Inter;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 45px;
+  color: transparent;
+  background: linear-gradient(90deg, #1173D4 0%, #33CC73 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  margin-bottom: 15px;
+}
+body main .exames-de-rotina p {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  color: #04031C;
+  margin-bottom: 40px;
+}
+body main .exames-de-rotina .check-ups-cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+body main .exames-de-rotina .check-ups-cards .card {
+  width: 30%;
+  min-height: 200px;
+  height: 100%;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background-color: #F9FAFB;
+  border: 2px solid rgba(0, 0, 0, 0.2509803922);
+  box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.2509803922);
+  border-radius: 10px;
+}
+body main .exames-de-rotina .check-ups-cards .card img {
+  width: 20%;
+}
+body main .exames-de-rotina .check-ups-cards .card h3 {
+  font-family: Inter;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 100%;
+  text-align: center;
+  color: #04031C;
+}
+body main .exames-de-rotina .check-ups-cards .card .card-text {
+  font-family: Inter;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  text-align: center;
+  margin-bottom: 0;
+  color: #04031C;
+}
+
+/*# sourceMappingURL=output.css.map */

@@ -1,0 +1,139 @@
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    gap: 3rem;
+
+    .conteudo {
+        max-width: 480px;
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            line-height: 1.1;
+            margin: 1.5rem  0;
+            color: #000;
+        }
+
+        p {
+            font-size: 1.125rem;
+            color: #444;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 2rem;
+
+
+            .btnUm {
+                padding: 12px 24px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1rem;
+                background: #00745A;
+                color: #fff;
+
+                &:hover {
+                    background-color: #02634c;
+                }
+            }
+
+            .btnDois {
+                padding: 12px 24px;
+                border-radius: 8px;
+                text-decoration: none;
+                font-weight: 500;
+                font-size: 1rem;
+                border: 2px solid #00745A;
+                color: #00745A
+            }
+        }
+    }
+}
+
+.sectionMissao{
+    padding: 4rem 6rem;
+    background-color: #00745A;
+    color: #fff;
+    border: 1px solid #00745A;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }
+
+    .boxCards{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        
+
+        article{
+            width: 28%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 2rem 1rem;
+            text-align: center;
+            border: 1px solid #fff;
+            border-radius: 10px;
+
+            h3{
+                font-size: 1.5rem;
+                font-weight: 600;
+                margin-bottom: 1rem;
+            }
+
+            p{
+                font-size: 1rem;
+                line-height: 1.5;
+            }
+        }
+    }
+
+}
+
+.sectionImpacto{
+    padding: 4rem 6rem;
+
+    h2 {
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+        color: #000;
+    }
+
+    .boxCardsImpacto{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+
+        article{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1rem;
+            padding: 3rem 1rem;
+            text-align: center;
+            border: 1px solid #000;
+            border-radius: 10px;
+
+            h3{
+                font-size: 2rem;
+                font-weight: 600;
+                color: #00745A;
+            }
+
+            p{
+                font-size: 1rem;
+                color: #444;
+            }
+        }
+    }
+}

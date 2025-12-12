@@ -1,0 +1,77 @@
+.footer{
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+
+    .conteudo{
+        max-width: 1200px;
+        width: 90%;
+        margin: 0 auto;
+        padding: 4rem 5rem;
+        display: flex;
+        justify-content: space-between;
+
+        .apresentacaoMarca{
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .logoMarca{
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+                gap: 0.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+        }
+
+        .contato {
+            width: 30%;
+            padding-left: 1rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            ul {
+                list-style: none;
+
+                li {
+                    display: flex;
+                    font-size: 1.2rem;
+                    margin-bottom: 0.8rem;
+                    gap: 0.5rem;
+                }
+            }
+        }
+
+        .redesSociais {
+            width: 30%;
+            padding-left: 1rem;
+
+            h3 {
+                font-size: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+
+            ul {
+                list-style: none;
+                display: flex;
+                flex-direction: column;
+                gap: 0.8rem;
+
+                li {
+                    display: flex;
+                    align-items: center;
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}

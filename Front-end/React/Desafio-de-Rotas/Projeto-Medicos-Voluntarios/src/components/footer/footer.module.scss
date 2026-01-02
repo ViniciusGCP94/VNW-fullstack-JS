@@ -75,3 +75,68 @@
         }
     }
 }
+
+@media (max-width: 768px) {
+
+    .footer{
+        padding: 2rem 1rem;   
+        .conteudo{
+            padding: 2rem 0;
+            flex-wrap: wrap;
+
+            .apresentacaoMarca{
+                width: 45%;
+                justify-content: flex-start;
+
+                .logoMarca{
+                    margin-bottom: .5rem;
+
+                    img{
+                        width: 30px;
+                        height: 30px;
+                    }
+
+                    h2{
+                        font-size: .75rem;
+                    }
+                }
+
+                p{
+                    font-size: .75rem;
+                }
+            }
+
+            .contato {
+                width: 55%;
+
+                h3{
+                    font-size: .75rem;
+                    margin-bottom: .5rem;
+                    margin-top: 0.5rem;
+                }
+
+                p {
+                    font-size: .6rem;
+                }
+
+            }
+
+            .redesSociais {
+                width: 50%;
+                padding-left: 0;
+
+                h3 {
+                    font-size: 1rem;
+                }
+
+                ul {
+
+                    li{
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}

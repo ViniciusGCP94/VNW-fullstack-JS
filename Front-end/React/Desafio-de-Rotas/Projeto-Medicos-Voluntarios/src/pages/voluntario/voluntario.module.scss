@@ -1,3 +1,133 @@
-section{
+.section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 4rem 6rem;
+    gap: 3rem;
+
+    .boxCards{
+        display: flex;
+        justify-content: space-between;
+
+        article {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            padding: 2rem 1rem;
+            text-align: center;
+            border: 1px solid #ccc;
+            border-radius: 2rem;
+        }
+    }
+}
+
+.sectionForm{
+    padding: 4rem 6rem;
+    background-color: #00745A;
+
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        gap: 1rem;
+        padding: 2rem;
+        border-radius: 2rem;
+        background-color: #FFFFFF;
+
+        span{
+            width: 100%;
+            text-align: center;
+        }
+
+        button {
+            padding: 1rem 2rem;
+            background-color: #00745A;
+            border-radius: 1rem;
+            margin: auto;
+            color: #FFFFFF;
+            border: none;
+        }
+    }
+
+    
+}
+
+fieldset{
+    width: 100%;
+    border: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+
+    legend{
+        width: 100%;
+        padding: 1rem 0;
+    }
+}
+
+input, textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
     border: 1px solid #ccc;
+    font-size: 1rem;
+
+}
+
+.inputMedium{
+    width: 48%;
+}
+
+
+@media (max-width: 1024px) {
+
+  .section,
+  .sectionForm {
+    padding: 3rem 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+    .section{
+        padding: 2rem 1.5rem;
+
+        p{
+            text-align: center;
+        }
+            .boxCards{
+                flex-direction: column;
+                align-items: center;
+                gap: 2rem;
+
+                article {
+                    width: 100%;
+                }
+            }  
+    }
+
+    .sectionForm {
+        padding: 2rem 1.5rem;
+
+        form{
+            gap: .25rem;
+
+            h2{
+                text-align: center;
+            }
+        }
+    }
+
+    fieldset{
+        gap: 1rem .25rem;
+        margin: .25rem 0;
+    }
+
+    textarea{
+        height: 10rem;
+    }
+
+    
 }

@@ -33,9 +33,9 @@ const Footer = () => {
                 <div className={s.redesSociais}>
                     <h3>Redes Sociais</h3>
                     <ul>
-                        <li> Facebook </li>
-                        <li> Instagram </li>
-                        <li> LinkedIn </li>
+                        <li>Facebook</li>
+                        <li> Instagram</li>
+                        <li>LinkedIn</li>
                     </ul>
                 </div>
             </div>

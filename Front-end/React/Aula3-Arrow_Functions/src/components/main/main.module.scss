@@ -1,0 +1,17 @@
+main {
+  padding: 2rem;
+  height: 80vh;
+  border: solid 2px green;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+  section {
+    border: solid 2px red;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+  }
+}

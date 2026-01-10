@@ -1,17 +1,9 @@
-//import { useState } from 'react';
-import Header from './components/header/Header';
-import Main from './components/main/Main';
-import './globalStyle.scss';
+import Main from "./components/main/Main";
 
-const App = () => {
-
+export default function App() {
   return (
     <>
-      <Header />
       <Main />
     </>
-  )
+  );
 }
-
-export default App
-

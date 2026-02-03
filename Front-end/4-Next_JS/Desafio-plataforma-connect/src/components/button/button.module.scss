@@ -1,0 +1,39 @@
+@use '../../assets/styles/mixins' as m;
+
+
+.btnBase {
+  @extend %botao;
+  padding: 12px 32px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.orange {
+  background-color: #F87171; 
+  color: white;
+  &:hover {
+    background-color: #205691; 
+  }
+}
+
+.primary {
+  background-color: #205691;
+  color: white;
+  &:hover {
+    opacity: 0.9;
+  }
+}
+
+.outline {
+  background-color: transparent;
+  border-color: #205691;
+  color: #205691;
+  &:hover {
+    background-color: #205691;
+    color: white;
+  }
+}

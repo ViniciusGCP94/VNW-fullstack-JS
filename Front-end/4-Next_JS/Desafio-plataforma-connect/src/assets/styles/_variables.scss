@@ -1,0 +1,12 @@
+$font-primary: 'Source Sans 3', sans-serif;
+$font-secondary: 'Helvetica', Arial, sans-serif;
+
+$weight-regular: 400;
+$weight-semibold: 600;
+$weight-bold: 700;
+
+$size-xl: clamp(2.5rem, 8vw, 4.5rem); 
+$size-lg: clamp(1.875rem, 5vw, 3.125rem);   
+$size-md: clamp(1.375rem, 3vw, 1.875rem);   
+$size-base: clamp(1.125rem, 2.5vw, 1.5rem); 
+$size-sm: clamp(0.875rem, 2vw, 1rem);   

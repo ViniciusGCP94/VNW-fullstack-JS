@@ -1,9 +1,26 @@
 import React from "react";
+import S from "./home.module.scss";
+import heroImage from "../../assets/images/home-image.png";
+import Button from "../../components/button/button.jsx";
+import StatItem from "../../components/stats/StatsInfo.jsx";
 
 export default function Home() {
   return (
-    <div>
-      <h1>Pagina principal!!</h1>
-    </div>
+    <section className={S.home}>
+      <div className={S.contentContainer}>
+        <h1 className={S.titleHome}>Projetos Sociais que transformam</h1>
+        <p className={S.description}>Conectamos sua empresa com projetos sociais impactantes. Juntos, criamos mudanças reais na comunidade.</p>
+        <Button variant="orange">Cadastrar Empresa → </Button>
+        <div className={S.statsContainer}>
+          <StatItem quantity="500+" label="Empresas Voluntárias" />
+          <StatItem quantity="1.2K+" label="Projetos Realizados" />
+          <StatItem quantity="50K+" label="Vidas Impactadas" />
+        </div>
+      </div>
+      <div className={S.imageContainer}>
+        <img className={S.heroImage} src={heroImage} alt="Hero Image" />
+      </div> 
+    </section>
+
   );
 }

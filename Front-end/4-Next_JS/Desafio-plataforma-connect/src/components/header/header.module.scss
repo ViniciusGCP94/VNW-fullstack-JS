@@ -1,5 +1,5 @@
 .header {
-  width: 100vw;
+  // border: solid 2px red;
   height: 100px;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@
 .navUser {
   position: absolute;
   right: 0;
-  top: 12%;
+  top: 5rem;
   background-color: #205691;
   a {
     display: block;
@@ -46,4 +46,10 @@
 
 .closedNav {
   display: none;
+}
+
+@media (max-width: 768px) {
+  .imgLogo {
+    max-width: 57px;
+  }
 }

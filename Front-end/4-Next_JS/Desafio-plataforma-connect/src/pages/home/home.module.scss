@@ -49,10 +49,15 @@
         .contentContainer{
             width: 100%;
             align-items: center;
-            padding: 2rem 0;
+            padding: 2rem;
             text-align: center;
 
+            .titleHome{
+                width: 90%;
+            }
+
             .statsContainer{
+                width: 100%;
                 justify-content: center;
                 gap: 2rem;
             }

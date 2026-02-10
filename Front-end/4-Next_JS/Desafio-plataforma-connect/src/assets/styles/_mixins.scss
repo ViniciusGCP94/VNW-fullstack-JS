@@ -6,7 +6,6 @@
   font-weight: $weight;
 }
 
-// Implementação específica baseada na sua imagem
 %titulo { @include font-style(v.$font-primary, v.$size-xl, v.$weight-bold); }
 %titulo-auxiliar { @include font-style(v.$font-primary, v.$size-lg, v.$weight-bold); }
 %cards { @include font-style(v.$font-primary, v.$size-md, v.$weight-bold); }

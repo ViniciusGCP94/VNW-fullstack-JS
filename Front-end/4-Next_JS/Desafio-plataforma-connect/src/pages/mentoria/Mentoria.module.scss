@@ -1,0 +1,43 @@
+@use "../../assets/styles/variables" as v;
+@use "../../assets/styles/mixins" as m;
+
+.mentoriaContainer {
+    width: 100%;
+    min-height: 80vh;
+    padding: 40px 50px;
+    background-color: #f9f9f9; 
+
+    .mentoriaHeader {
+        text-align: center;
+        margin-bottom: 50px;
+
+        h1 {
+            @extend %titulo; 
+            color: #122F97;
+            font-size: clamp(2rem, 5vw, 3.5rem);
+        }
+    }
+}
+
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(300px, 380px)); 
+  gap: 40px; 
+  width: 100%; 
+  justify-content: center;  
+  align-items: stretch;  
+  max-width: 1200px;  
+  margin: 0 auto;  
+}
+
+@media (max-width: 1024px) {
+    .cardsGrid {
+      grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .cardsGrid {
+        grid-template-columns: 1fr; 
+    }
+}

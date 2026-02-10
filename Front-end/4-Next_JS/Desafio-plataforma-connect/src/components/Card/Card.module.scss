@@ -1,39 +1,74 @@
 .cardContainer {
-    width: 100vw; 
+    width: 100%; 
+    background: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;  
+    height: 100%;  
+
+     &:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    }
 
     .cardImage{
-        width: 50%;
-        height: 100%;
+        width: 100%;
+        height: 200px;
         object-fit: cover;
+        display: block;
     }
 
     .cardContent{
-        width: 50%;
-        padding: 20px;
+        width: 100%;
+        padding: 24px;
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        gap: 16px;
+        flex: 1;
 
         .cardTitle{
             font-family: Source Sans 3;
             font-weight: 700;
-            font-style: Bold;
             font-size: 30px;
             line-height: 120%;
             text-align: center;
-
+            color: #122F97;
+            margin: 0;
         }
 
         .cardDescription{
+            color: #122F97;
             font-family: Helvetica;
             font-weight: 400;
-            font-style: Regular;
             font-size: 16px;
             line-height: 120%;
-            letter-spacing: 0%;
             text-align: center;
+            margin: 0;
+            flex: 1;
         }
     }
+}
 
+@media (max-width: 768px) {
+    .cardContainer {
+        .cardImage {
+            height: 200px;
+        }
+
+        .cardContent {
+            padding: 20px;
+
+            .cardTitle {
+                font-size: 20px;
+            }
+
+            .cardDescription {
+                font-size: 14px;
+            }
+        }
+    }
 }

@@ -1,5 +1,4 @@
 import { Link } from "react-router-dom";
-import Logo from "../../assets/images/logo.png";
 import S from "./header.module.scss";
 import { useEffect, useState } from "react";
 
@@ -26,7 +25,7 @@ function Header() {
           <Link to="/">
             <img
               className={S.imgLogo}
-              src={Logo}
+              src="/images/logo.png"
               alt="Imagem de logo do site sendo representada por uma mão segurando um coração, simbolizando apoio"
             />
           </Link>

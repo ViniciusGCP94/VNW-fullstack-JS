@@ -1,9 +1,27 @@
-import React from "react";
+import S from "./Voluntariado.module.scss";
+import Card from "../../components/Card/Card";
+import { voluntariadoData } from "../../data/voluntariadoData";
 
-export default function Voluntariado() {
+function Voluntariado() {
   return (
-    <div>
-      <h1>Voluntariado</h1>
-    </div>
+    <main className={S.voluntariadoContainer}>
+      <section className={S.voluntariadoHeader}>
+        <h1>Voluntariado</h1>
+      </section>
+
+      <section className={S.cardsGrid}>
+        {voluntariadoData.map((item) => (
+          <Card
+            key={item.id}
+            image={item.image}
+            title={item.title}
+            description={item.description}
+            buttonText={item.buttonText}
+          />
+        ))}
+      </section>
+    </main>
   );
 }
+
+export default Voluntariado;

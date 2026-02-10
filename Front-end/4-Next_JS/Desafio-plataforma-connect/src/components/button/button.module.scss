@@ -1,39 +1,63 @@
 @use '../../assets/styles/mixins' as m;
 
-
 .btnBase {
   @extend %botao;
-  padding: 12px 32px;
+  padding: 14px 36px; 
   cursor: pointer;
-  border: 2px solid transparent;
+  border: none;
   transition: all 0.3s ease;
   display: inline-flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
+  font-weight: 700; 
+  font-size: 16px;
+  font-family: 'Source Sans 3', sans-serif;  
+  text-transform: none;  
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(32, 86, 145, 0.3);
+  }
+  
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.primary {
+  background-color: #205691;  
+  color: white;
+  border-radius: 8px;
+  
+  &:hover {
+    background-color: #1a4578;  
+  }
 }
 
 .orange {
   background-color: #F87171; 
   color: white;
+  
   &:hover {
-    background-color: #205691; 
-  }
-}
-
-.primary {
-  background-color: #205691;
-  color: white;
-  &:hover {
-    opacity: 0.9;
+    background-color: #f44336;
   }
 }
 
 .outline {
   background-color: transparent;
-  border-color: #205691;
+  border: 2px solid #205691;
   color: #205691;
+  
   &:hover {
     background-color: #205691;
     color: white;
+  }
+}
+
+@media (max-width: 768px) {
+  .btnBase {
+    padding: 12px 28px;
+    font-size: 14px;
   }
 }

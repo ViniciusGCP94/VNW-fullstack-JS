@@ -1,6 +1,4 @@
-import React from "react";
 import S from "./home.module.scss";
-import heroImage from "../../assets/images/home-image.png";
 import Button from "../../components/button/button.jsx";
 import StatItem from "../../components/stats/StatsInfo.jsx";
 
@@ -18,7 +16,7 @@ export default function Home() {
         </div>
       </div>
       <div className={S.imageContainer}>
-        <img className={S.heroImage} src={heroImage} alt="Hero Image" />
+        <img className={S.heroImage} src="/images/cards/home-image.png" alt="Hero Image" />
       </div> 
     </section>
 

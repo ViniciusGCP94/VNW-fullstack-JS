@@ -1,0 +1,39 @@
+.cardContainer {
+    width: 100vw; 
+
+    .cardImage{
+        width: 50%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .cardContent{
+        width: 50%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .cardTitle{
+            font-family: Source Sans 3;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 30px;
+            line-height: 120%;
+            text-align: center;
+
+        }
+
+        .cardDescription{
+            font-family: Helvetica;
+            font-weight: 400;
+            font-style: Regular;
+            font-size: 16px;
+            line-height: 120%;
+            letter-spacing: 0%;
+            text-align: center;
+        }
+    }
+
+}

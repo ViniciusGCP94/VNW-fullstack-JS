@@ -1,5 +1,5 @@
 import S from "./home.module.scss";
-import Button from "../../components/button/button.jsx";
+import Button from "../../components/button/Button.jsx";
 import StatItem from "../../components/stats/StatsInfo.jsx";
 
 export default function Home() {
@@ -16,7 +16,7 @@ export default function Home() {
         </div>
       </div>
       <div className={S.imageContainer}>
-        <img className={S.heroImage} src="/images/cards/home-image.png" alt="Hero Image" />
+        <img className={S.heroImage} src="/images/home-image.png" alt="Hero Image" />
       </div> 
     </section>
 

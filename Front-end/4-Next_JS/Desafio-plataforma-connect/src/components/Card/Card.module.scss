@@ -1,55 +1,89 @@
 .cardContainer {
-    width: 100%; 
+    width: 100%;
     background: white;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
-    flex-direction: column;  
-    height: 100%;  
+    flex-direction: column;
+    height: 100%;
+    position: relative; // Para posicionar o badge
 
-     &:hover {
+    &:hover {
         transform: translateY(-8px);
         box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
     }
 
-    .cardImage{
+    .sucessoBadge {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        background: #4CAF50;
+        color: white;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        z-index: 10;
+        box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+        animation: slideIn 0.3s ease;
+
+        span {
+            font-size: 16px;
+        }
+    }
+
+    .cardImage {
         width: 100%;
-        height: 200px;
+        height: 240px;
         object-fit: cover;
         display: block;
     }
 
-    .cardContent{
+    .cardContent {
         width: 100%;
         padding: 24px;
         display: flex;
         flex-direction: column;
-        align-items: center;
         gap: 16px;
         flex: 1;
+        align-items: center;
 
-        .cardTitle{
-            font-family: Source Sans 3;
+        .cardTitle {
+            font-family: 'Source Sans 3', sans-serif;
             font-weight: 700;
-            font-size: 30px;
+            font-size: 24px;
             line-height: 120%;
             text-align: center;
             color: #122F97;
             margin: 0;
         }
 
-        .cardDescription{
-            color: #122F97;
-            font-family: Helvetica;
+        .cardDescription {
+            font-family: 'Helvetica', 'Arial', sans-serif;
             font-weight: 400;
             font-size: 16px;
-            line-height: 120%;
+            line-height: 150%;
             text-align: center;
+            color: #555;
             margin: 0;
             flex: 1;
         }
+    }
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
 
@@ -69,6 +103,11 @@
             .cardDescription {
                 font-size: 14px;
             }
+        }
+
+        .sucessoBadge {
+            font-size: 12px;
+            padding: 6px 12px;
         }
     }
 }

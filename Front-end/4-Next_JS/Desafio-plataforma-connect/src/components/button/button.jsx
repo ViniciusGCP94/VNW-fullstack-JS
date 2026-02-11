@@ -1,12 +1,6 @@
 import S from "./button.module.scss";
 
-function Button({ 
-  children, 
-  text, 
-  variant = "primary",
-  onClick,
-  type = "button"
-}) {
+function Button({ children, text, variant = "primary", onClick, type = "button" }) {
   return (
     <button 
       className={`${S.btnBase} ${S[variant]}`}

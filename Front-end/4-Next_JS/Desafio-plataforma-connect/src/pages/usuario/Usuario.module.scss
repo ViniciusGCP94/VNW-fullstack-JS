@@ -1,0 +1,192 @@
+.usuarioContainer {
+  width: 100%;
+  min-height: 80vh;
+  padding: 60px 5%;
+  background: linear-gradient(180deg, #f5f7fa 0%, #ffffff 100%);
+}
+
+.perfilSection {
+  max-width: 900px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 16px;
+  padding: 60px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  display: flex;
+  gap: 60px;
+  align-items: flex-start;
+
+  .fotoPerfil {
+    flex-shrink: 0;
+
+    img {
+      width: 280px;
+      height: 280px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 6px solid transparent;
+      background: linear-gradient(white, white) padding-box,
+                  linear-gradient(135deg, #F87171, #205691, #4CAF50) border-box;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+    }
+  }
+
+  .infoUsuario {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    .nomeUsuario {
+      font-family: 'Source Sans 3', sans-serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #1a1a1a;
+      margin: 0;
+    }
+
+    .statusUsuario {
+      font-size: 18px;
+      color: #4CAF50;
+      font-weight: 600;
+      margin: 0;
+    }
+
+    .bioUsuario {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #555;
+      margin: 10px 0 20px 0;
+    }
+
+    .detalhes {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin: 10px 0;
+
+      .detalheItem {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        font-size: 16px;
+        color: #333;
+
+        .icone {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .interessesContainer {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      margin-top: 20px;
+
+      .tagInteresse {
+        background: #E8F5E9;
+        color: #2E7D32;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 14px;
+        font-weight: 600;
+        border: 1px solid #81C784;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .perfilSection {
+    padding: 40px;
+    gap: 40px;
+
+    .fotoPerfil img {
+      width: 220px;
+      height: 220px;
+    }
+
+    .infoUsuario {
+      .nomeUsuario {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .usuarioContainer {
+    padding: 40px 20px;
+  }
+
+  .perfilSection {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    gap: 30px;
+
+    .fotoPerfil img {
+      width: 200px;
+      height: 200px;
+    }
+
+    .infoUsuario {
+      text-align: center;
+
+      .nomeUsuario {
+        font-size: 28px;
+      }
+
+      .detalhes {
+        align-items: center;
+      }
+
+      .interessesContainer {
+        justify-content: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .perfilSection {
+    padding: 20px;
+
+    .fotoPerfil img {
+      width: 160px;
+      height: 160px;
+    }
+
+    .infoUsuario {
+      .nomeUsuario {
+        font-size: 24px;
+      }
+
+      .statusUsuario {
+        font-size: 16px;
+      }
+
+      .bioUsuario {
+        font-size: 14px;
+      }
+
+      .detalhes {
+        .detalheItem {
+          font-size: 14px;
+
+          .icone {
+            font-size: 18px;
+          }
+        }
+      }
+
+      .interessesContainer {
+        .tagInteresse {
+          font-size: 12px;
+          padding: 6px 12px;
+        }
+      }
+    }
+  }
+}

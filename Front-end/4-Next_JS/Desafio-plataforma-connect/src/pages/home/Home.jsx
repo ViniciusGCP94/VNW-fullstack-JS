@@ -1,5 +1,5 @@
 import S from "./home.module.scss";
-import Button from "../../components/button/Button.jsx";
+import Button from "../../components/button/button.jsx";
 import StatItem from "../../components/stats/StatsInfo.jsx";
 
 export default function Home() {

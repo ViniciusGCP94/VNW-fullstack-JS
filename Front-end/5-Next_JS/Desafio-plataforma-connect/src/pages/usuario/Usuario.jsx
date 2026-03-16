@@ -2,14 +2,14 @@ import S from "./Usuario.module.scss";
 
 function Usuario() {
   const usuario = {
-    nome: "Vinicius Bispo",
+    nome: "Vinicius Pereira",
     status: "Voluntário Ativo",
-    bio: "Apaixonado por fazer a diferença na comunidade. Acredito que pequenas ações podem transformar vidas e estou sempre em busca de novas oportunidades para ajudar.",
-    localizacao: "Salvador, BA",
-    email: "vini.bispo@gmail.com",
-    foto: "https://avatars.githubusercontent.com/u/118212495?v=4",
+    bio: "Fazer a diferença na comunidade é algo que me motiva, pois sei que pequenas ações podem causar grandes impactos.",
+    localizacao: "Santa Cruz do Sul, RS",
+    email: "viniciusgcp94@gmail.com",
+    foto: "https://avatars.githubusercontent.com/u/92233072?v=4",
     dataMembro: "Janeiro 2022",
-    interesses: ["Educação", "Meio Ambiente", "Assistência Social", "Design"]
+    interesses: ["Educação", "Meio Ambiente", "Assistência Social"]
   };
 
   return (

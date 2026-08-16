@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-   baseURL: "https://api-orkut-1tap.onrender.com"
+   baseURL: "https://orkut-api-m2hm.onrender.com",
  });
 
  // Interceptor → adiciona o token automaticamente
@@ -16,18 +16,3 @@ const api = axios.create({
  });
 
  export default api;
-
- /**
-  api.get("/posts", {
-    headers: {
-      Authorization = Bearer ${token}
-    }
-  }) 
-
-  config = {
-    url: "/posts",
-    method: "get",
-    headers: {}
-  }
-  * 
-  */

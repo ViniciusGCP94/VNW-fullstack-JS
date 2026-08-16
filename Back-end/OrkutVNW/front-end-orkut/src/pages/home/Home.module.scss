@@ -1,75 +1,108 @@
-.home {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 800px;
-  margin: 40px auto;
-  padding: 20px;
-  font-family: Arial, Helvetica, sans-serif;
+@use "../../styles/variables" as v;
 
-    h1 {
-        text-align: center;
-        margin-bottom: 30px;
-        color: #333;
-    }
+.homeContainer {
+  background-color: v.$orkut-blue-bg;
+  min-height: 100vh;
+  padding: 0 0 20px 0;
+  font-family: 'Tahoma', 'Arial', sans-serif;
 
-    .btn {
-      background-color: #f44336;
-      color: white;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: v.$orkut-blue-main;
+    padding: 10px 10%;
+    color: white;
+    margin-bottom: 20px;
+
+    h1 { font-size: 1.5rem; margin: 0; font-weight: bold; text-transform: lowercase; }
+    
+    .btnLogout {
+      background-color: v.$orkut-pink;
       border: none;
-      padding: 8px;
-      border-radius: 6px;
+      color: white;
+      padding: 5px 15px;
+      border-radius: 4px;
       cursor: pointer;
+      font-weight: bold;
+      &:hover { filter: brightness(1.1); }
+    }
+  }
+
+  .mainContent {
+    display: grid;
+    grid-template-columns: 200px 1fr 250px;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+
+    @media (max-width: 900px) { grid-template-columns: 1fr; }
+  }
+
+  .card {
+    background: white;
+    border: 1px solid v.$orkut-border;
+    border-radius: 4px;
+    padding: 15px;
+    margin-bottom: 15px;
+
+    h2 {
+      font-size: 1rem;
+      color: v.$orkut-blue-main;
+      border-bottom: 1px solid v.$orkut-border;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .profilePlaceholder {
+    text-align: center;
+    img {
+      width: 150px;
+      height: 150px;
+      border-radius: 8px;
+      border: 1px solid v.$orkut-border;
+      margin-bottom: 10px;
+    }
+    p { color: v.$orkut-blue-main; font-weight: bold; margin: 0; }
+  }
+
+  .postForm {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    input, textarea {
+      border: 1px solid v.$orkut-border;
+      padding: 8px;
+      border-radius: 4px;
+      font-size: 14px;
+      &:focus { outline: 1px solid v.$orkut-blue-main; }
     }
 
-    .btn:hover {
-      background-color: #d32f2f;
+    textarea { height: 80px; resize: none; }
+
+    .btnPostar {
+      background-color: v.$orkut-blue-light;
+      color: #3B5998;
+      border: 1px solid #7E94BD;
+      padding: 8px 20px;
+      font-weight: bold;
+      border-radius: 4px;
+      align-self: flex-end;
+      cursor: pointer;
+      &:hover { background-color: v.$orkut-blue-main; color: white; }
     }
-}
 
-.postForm {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background: #ffffff;
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-.postForm input,
-.postForm textarea {
-  padding: 10px;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-
-.postForm textarea {
-  resize: none;
-  height: 80px;
-}
-
-.postForm button {
-  background-color: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: 0.3s;
-}
-
-.postForm button:hover {
-  background-color: #45a049;
-}
-
-/* POSTS */
-.postsContainer {
-  margin-top: 20px;
-}
-
-.empty {
-  text-align: center;
-  color: #777;
+    .btnCancel {
+      background: none;
+      border: none;
+      color: v.$orkut-pink;
+      cursor: pointer;
+      font-size: 12px;
+      text-decoration: underline;
+      align-self: flex-end;
+    }
+  }
 }
